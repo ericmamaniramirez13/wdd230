@@ -1,0 +1,111 @@
+@media screen and (max-width: 751px){
+    .title{
+        font-size: 15px;
+    }
+    /*#banner{
+        width: 300px;
+    }*/
+    #main_main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 165px);
+        grid-gap: 5px;
+        /*height: 1190px;*/
+    }
+    p.spot3{
+        display: none;
+    }
+    #hero{
+        grid-row: 1/2;
+        text-align: center;
+        background-color: seashell;
+    }
+    #spotlight{
+        grid-row: 6/8;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #spotlight p{
+        border: 1px solid black;
+    }
+
+    footer{
+        display: grid;
+        text-align: center;
+        background-color: gray;
+        font-size: 14px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 60px 60px 30px 70px
+    }
+    #img_footer{
+        grid-row: 1/2;
+        align-items: center;
+    }
+    .address{
+        text-align: center;
+        grid-row: 2/3;
+    }
+    .info{
+        text-align: center;
+        grid-row: 3/4;
+    }
+    .date{
+        grid-row: 4/5;
+    }
+    #modified{
+        grid-row: 5/6;
+    }
+    #hero {
+        position: relative;
+    }
+    #hero button{
+        
+        background-color: lightgreen;
+        color: black;
+        font-size: 14px;
+        border-radius: 15px;
+        padding: 5px;
+        position: absolute;
+        top: 82%;
+        right: 15%;
+    }
+    /*Discover*/
+    .discover_pictures img:hover{
+        box-shadow: none;  
+    }
+    #main_join{
+        border: 2px solid black;
+    }
+    /*------------------------------------Contact PAGE------------------------------------*/
+    #main_contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+    .directors{
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 1fr;
+  
+    }
+    .directors section{
+        grid-row: 1/2;
+    }
+    .head{
+        grid-row: 2/3;
+    }
+    .secretary{
+        grid-row: 3/4;
+    }
+    .traturer{
+        grid-row: 4/5;
+    }
+    .directors p{
+        grid-row: 5/6;
+    }
+    .contact_form{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+}

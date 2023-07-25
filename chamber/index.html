@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="chamber assignment">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/weatherapi.js" defer></script>
+    <script src="js/spots.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="logo" src="images/logo.jpg" alt="Logo">
+            <h1 class = "title">Point of the Mountain Chamber</h1>
+        <div class="icons">
+            <a id="youtube" href="https://www.youtube.com/"><img class="icon" src="images/youtube.jpg" alt="facebook icon"></a>
+            <a id="face" href="https://www.facebook.com//"><img class="icon" src="images/face.jpg" alt="linkdin icon"></a>
+        </div>
+        <nav class="navegator">
+            <button class="ham">&#9776;</button>
+            <ul class="nav-menu">
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main id = "main_main">
+        <div class = "boxes" id = "event">
+            <h3>Events</h3>
+            <p id="message"> "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
+        </div>
+        <div class = "boxes" id = "hero">
+
+            <picture>
+                <source srcset="images/medium.jpg" media="(min-width: 751px) and (max-width: 1020px)">
+                <source srcset="images/large.jpg" media="(min-width: 1020px)">
+                <img id="min_banner" src="images/small.jpg" alt="hero image" >
+            </picture>
+
+            <!--<img id = "banner" src ="images/background.jpg" alt="image_background">-->
+            <button onclick="window.location.href='join.html'">Join the Chamber</button>
+        </div>
+        <div class = "boxes" id = "weather">
+            <h3>Weather</h3>
+            <div>
+                <div id="icon-div">
+                    <figure><img src="https://via.placeholder.com/30x40.png?text=placeholder" alt="image of weather" id="weathericon"/></figure>
+                    <p id="current-temp"></p>
+                </div>
+                <div id="cond-div">
+                    <p id="condition"></p>
+                    <p>Wind speed: <span id="wind-speed"></span></p>
+                    <p>Wind chill: <span id="wind-chill"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class = "boxes" id = "join">
+            <button onclick="window.location.href='join.html'">Join Us!</button>
+            <p>There are many benefits in our community for you to enjoy.</p>
+        </div>
+        <div class = "boxes" id = "news">
+            <h3>News Release</h3>
+            <img class="travel_logo" src="images/travel.png" alt="travel Logo">
+            <p>We have many resources when it comes to find places to go and visit.</p>
+        </div>
+        <div class = "boxes" id = spotlight>
+            <p class = "spot1"></p>
+            <p class = "spot2"></p>
+            <p class = "spot3"></p>
+        </div>
+    </main>
+
+    <footer>
+        <div id = "img_footer">
+        <img class="logo" src="images/logo.jpg" alt="Logo"></div>
+        <section class="address">
+            <h4>Point of the Mountain Chamber</h4>
+            <p>114 W 2nd S</p>
+            <p>Provo, UT 84602</p>
+        </section>
+        <div class="info">
+            <p>mauntain@gmail.com</p>
+            <p>8014547147</p>
+            <a target="_blank" href="https://www.google.com/maps/place/Don+Joaquin+Street+Tacos/@40.250944,-111.6630943,17z/data=!3m2!4b1!5s0x874d90a142f99b07:0x275f0fa40322fd65!4m5!3m4!1s0x874d9a0a77d5f11f:0x524960aec2c10b8c!8m2!3d40.2509399!4d-111.6609056">🌎 Location Map</a>
+        </div>
+
+        <p class="date"></p>
+        <h4 id="modified">&copy;2022 .:|:. <b>Eric Mamani</b> .:|:. WDD-230 Project| Chile |  </h4>
+    </footer>
+
+</body>
+</html>

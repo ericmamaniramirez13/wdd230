@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,main p {
+    font-family: 'Lora', sans-serif;
+}
+li a {
+    font-family: sans-serif;
+}
+#message{
+    display: none;
+}
+body{
+    padding: 150px 50px 0px;
+    background-color:seashell;
+}
+.travel_logo{
+    width: 50px;
+}
+.boxes{
+    background-color: rgb(252, 178, 125);
+    text-align: center;
+}
+.header {
+    display: grid;
+    background-color: rgb(88, 199, 255);
+    height: 140px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 80px 80px;
+    z-index: 5;
+    padding: 0 50px;
+}
+.logo{
+    width: 100px;
+    grid-column: 1/2;
+}
+
+.icon{
+    width: 40px;
+    border-radius: 10px;
+}
+.icons{
+    grid-column: 3/4;
+    /*border: 1px solid black;*/
+    justify-content: space-evenly;
+}
+.navegator {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    height: 60px;
+}
+.title {
+    grid-column: 2/3;
+    text-align: center;
+    align-items: center;
+    /*border: 1px solid red;*/
+    justify-content: center;
+}
+.nav-menu{
+    background-color: lightblue;
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    line-height: 50px;
+    border: 1px solid white;
+    justify-content: space-evenly;
+    padding: 0px 5px;
+}
+.nav-menu a{
+    padding: 10px 5px;
+}
+.nav-menu a:hover {
+    color: white;
+    background-color: #69b8d5;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.nav-menu a:link {
+    color: rgb(44, 42, 52);
+}
+
+.date{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+footer{
+    font-family: sans-serif;
+    margin-top: 10px;
+    display: grid;
+    text-align: center;
+    background-color: gray;
+    padding: 10px;
+    font-size: 18px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 80px 30px 50px
+}
+#join button{
+    background-color: lightgreen;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+}
+#join button:hover, #hero button:hover{
+    background-color: rgb(145, 233, 145);
+    text-decoration:none;
+    box-shadow: 3px 3px 3px 0 black;
+    border-radius: 10px;
+    border: 3px solid seashell;
+}
+.icons #youtube:hover, .icons #face:hover {
+    color: white;
+    background-color: #69b8d5;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 3px solid white;
+    padding-top: 15px;
+}
+/*--------------------------------------Discover PAGE--------------------------------------*/
+
+.discover_pictures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discover_pictures img:hover{
+    box-shadow: 0 0 50px #333;  
+}
+
+
+
+/*--------------------------------------JOIN PAGE--------------------------------------*/
+/*.container_join {
+    position: relative;
+    align-items: center;
+    border: 3px solid black;
+    text-align: center;
+    height: 1760px;
+}*/
+#main_join{
+    display: grid;
+    grid-template-columns: 1fr;
+    /*border:10px solid red;*/
+    /*height: 1760px;*/
+    text-align: center;
+}
+form{
+
+    /*width: 700px;*/
+	background-color: rgb(255, 220, 193);
+    /*position: absolute;
+    top:0px;
+    right: 250px;*/
+    grid-column: 1/2;
+    /*height: 1700px;*/
+}
+
+form h2{
+	text-align: center;
+	padding: 15px;
+}
+
+form fieldset{
+	margin: 1.5rem auto;
+	padding: .8rem;
+	border-radius: 10px;
+	max-width: 80%;
+    border: 3px solid black;
+}
+
+form legend{
+	padding: .2rem .8rem;
+	border: 1.5px solid rgba(0,0,0,0.5);
+}
+
+
+form label.top, form div{
+	display: block;
+	padding-top: .5rem;
+	margin: 10px auto;
+	max-width: 90%;
+}
+
+form label.top input, form label.top textarea{
+	display: block;
+	padding: .75rem;
+	width: 95%;
+	border-radius: 5px;
+}
+
+form label.sbs{
+	display: block;
+}
+
+form label.sbs input{
+	margin: 5px;
+	padding: .75rem;	
+}
+
+form label.sbs span{
+	background-color: #762107;
+	color: snow;
+	padding: 5px 15px;
+	border-radius: 15px;
+	margin-left: 30px;
+}
+
+form input.send{
+	margin: 1.5rem 0 1.5rem 2.5rem;
+	padding: .8rem;
+	border-radius: 50px;
+	background-color: #ACCE22;
+}
+
+form label.top input:required{
+	border-left: red solid	 6px;
+}
+
+form label.top input:required:valid{
+	border-left: green solid 6px;
+}
+
+/*--------------------------------------THANK YOU PAGE--------------------------------------*/
+#main_thank_you {
+    display: block;
+}
+.thanks{
+	max-width: 90%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.thanks p{
+	margin-bottom: 50px;
+}
+
+.home{
+	background-color: #ACCE22;
+	border-radius: 50px;
+	padding: 15px 50px;
+	margin-bottom: 25px;
+	font-size: 1.5rem;
+}
+
+.thanksTitle{
+	font-size: 2.5rem;
+	margin: 20px 0;
+}
+
+
+/*------------------------------------DIRECTORY PAGE------------------------------------*/
+
+#main_directory{
+    display: flex;
+    /*height: 1450px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 1fr;*/
+    /*border: 10px solid black;*/
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+
+.buttons{
+    /*min-width: 500px;
+    grid-row: 1/2;
+    grid-column: 2/3;*/
+	/*display: flex;*/
+	justify-content: center;
+	column-gap: 10px;
+	margin: 15px auto;
+    /*border: 10px solid black;*/
+}
+
+div.cards{
+    margin: 15px 0;
+    /*border: 3px solid black;*/
+}
+
+
+
+button.listBtn, button.cardBtn{
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+button.listBtn img, button.cardBtn img{
+	display: block;
+	width: 25px; /* width of container */
+    height: 25px; /* height of container */
+    object-fit: cover;
+	margin: 5px auto;
+}
+
+.activeBtn{
+	background-color: rgba(0,0,0,.4);
+}
+
+.bCard{
+	max-width: 90%;
+	margin: 20px auto;
+	padding: 15px;
+	box-shadow: 0px 2px 8px #888888;
+    width: calc(100% - 15px);
+}
+
+.bCard h3{font-size: 1rem;}
+
+.bCard p{padding: 5px 0; font-size: 1rem;}
+
+.bCard a{word-wrap: break-word;}
+
+img.logoImg{
+	display: block;
+	width: 200px; /* width of container */
+    height: 120px; /* height of container */
+    object-fit: cover;
+	margin: 5px auto;
+}
+/*------------------------------------Contact PAGE------------------------------------*/
+.directors img{
+    box-shadow: 5px 5px 5px 0 rgb(212, 209, 208);
+}
